@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Digital Twin | AI-Powered Executive Simulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">◈</span>
+                <span>CEO Digital Twin</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#methodology">Methodology</a>
+                <a href="#results">Results</a>
+                <a href="#demo">Demo</a>
+                <a href="#audio">Audio</a>
+                <a href="#team">Team</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Research Project</div>
+            <h1 class="hero-title">
+                CEO Digital Twin
+                <span class="highlight">Based on Earnings Call Transcripts</span>
+            </h1>
+            <p class="hero-subtitle">
+                Can AI learn and reproduce the distinctive communication style of a Fortune 500 CEO? 
+                We built an LLM-based digital twin of <strong>Jamie Dimon</strong> trained on 17 years of 
+                JPMorgan Chase earnings calls.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">2115</span>
+                    <span class="stat-label">Q&A Pairs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">101</span>
+                    <span class="stat-label">Earnings Calls</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">17</span>
+                    <span class="stat-label">Years of Data</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">0.81</span>
+                    <span class="stat-label">Semantic Similarity</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#methodology" class="btn btn-primary">Explore Methodology</a>
+                <a href="#demo" class="btn btn-secondary">See Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">01 / Introduction</span>
+                <h2>About This Project</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="lead">
+                        We examine whether a large language model can learn and reproduce the distinctive 
+                        disclosure and conversational style of a high-profile CEO.
+                    </p>
+                    <p>
+                        Earnings calls are a rich source of data that captures individual-level managerial attributes. 
+                        During these calls, executives discuss financial results, answer analyst questions, and reveal 
+                        their communication patterns, values, and strategic thinking.
+                    </p>
+                    <p>
+                        Our digital twin of Jamie Dimon is trained on his historical earnings call transcripts 
+                        to predict his responses to analyst questions in subsequent calls. We evaluate the generated 
+                        answers against real answers across three dimensions: <strong>semantic similarity</strong>, 
+                        <strong>informational accuracy</strong>, and <strong>tone alignment</strong>.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">👤</div>
+                    <h3>Jamie Dimon</h3>
+                    <p class="card-role">CEO, JPMorgan Chase</p>
+                    <div class="card-stats">
+                        <div class="card-stat">
+                            <span class="card-stat-label">CEO Since</span>
+                            <span class="card-stat-value">2005</span>
+                        </div>
+                        <div class="card-stat">
+                            <span class="card-stat-label">Company</span>
+                            <span class="card-stat-value">JPMorgan Chase</span>
+                        </div>
+                        <div class="card-stat">
+                            <span class="card-stat-label">Known For</span>
+                            <span class="card-stat-value">Direct, Candid Style</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="section methodology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">02 / Approach</span>
+                <h2>Methodology</h2>
+            </div>
+            <p class="section-intro">
+                We designed four specifications that vary along three dimensions to compare different approaches 
+                to digital twin construction.
+            </p>
+            
+            <div class="specs-grid">
+                <div class="spec-card" data-spec="1">
+                    <div class="spec-header">
+                        <span class="spec-number">01</span>
+                        <h3>Random 500 Q&A</h3>
+                    </div>
+                    <p>Randomly samples 500 Q&A pairs from historical data as in-context examples.</p>
+                    <ul class="spec-features">
+                        <li>Broad temporal coverage</li>
+                        <li>Representative sampling</li>
+                        <li>Topic diversity</li>
+                    </ul>
+                    <div class="spec-tag">Baseline</div>
+                </div>
+
+                <div class="spec-card" data-spec="2">
+                    <div class="spec-header">
+                        <span class="spec-number">02</span>
+                        <h3>Recent 500 Q&A</h3>
+                    </div>
+                    <p>Uses the 500 most recent Q&A pairs, sorted by date in descending order.</p>
+                    <ul class="spec-features">
+                        <li>Current communication style</li>
+                        <li>Recent market context</li>
+                        <li>Temporal relevance</li>
+                    </ul>
+                    <div class="spec-tag">Recency Focus</div>
+                </div>
+
+                <div class="spec-card" data-spec="3">
+                    <div class="spec-header">
+                        <span class="spec-number">03</span>
+                        <h3>Recent Q&A + 10-Q</h3>
+                    </div>
+                    <p>Extends Spec 2 by prepending quarterly 10-Q financial summary before examples.</p>
+                    <ul class="spec-features">
+                        <li>Financial context</li>
+                        <li>Factual grounding</li>
+                        <li>Specific metrics</li>
+                    </ul>
+                    <div class="spec-tag">Data Augmented</div>
+                </div>
+
+                <div class="spec-card featured" data-spec="4">
+                    <div class="spec-header">
+                        <span class="spec-number">04</span>
+                        <h3>Persona + 10-Q</h3>
+                    </div>
+                    <p>Uses a compressed persona summary extracted from Q&A history plus 10-Q data.</p>
+                    <ul class="spec-features">
+                        <li>Explicit persona modeling</li>
+                        <li>Token efficient</li>
+                        <li>Scalable approach</li>
+                    </ul>
+                    <div class="spec-tag highlight">Best Performing</div>
+                </div>
+            </div>
+
+            <div class="method-diagram">
+                <h3>Pipeline Overview</h3>
+                <div class="diagram-flow">
+                    <div class="flow-step">
+                        <div class="step-icon">📊</div>
+                        <div class="step-content">
+                            <h4>Data Collection</h4>
+                            <p>17 years of earnings call transcripts from WRDS</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-icon">🔧</div>
+                        <div class="step-content">
+                            <h4>Preprocessing</h4>
+                            <p>Extract Q&A pairs with Jamie Dimon responses</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-icon">🤖</div>
+                        <div class="step-content">
+                            <h4>Model Generation</h4>
+                            <p>GPT-4o with specification-specific prompts</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-icon">📈</div>
+                        <div class="step-content">
+                            <h4>Evaluation</h4>
+                            <p>Multi-dimensional similarity analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section results">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">03 / Findings</span>
+                <h2>Evaluation Results</h2>
+            </div>
+
+            <div class="results-tabs">
+                <button class="tab-btn active" data-tab="semantic">Semantic Similarity</button>
+                <button class="tab-btn" data-tab="nli">Informational Accuracy</button>
+                <button class="tab-btn" data-tab="tone">Tone Alignment</button>
+                <button class="tab-btn" data-tab="human">Human Evaluation</button>
+            </div>
+
+            <div class="results-content">
+                <!-- Semantic Similarity Tab -->
+                <div class="tab-panel active" id="semantic">
+                    <div class="result-explanation">
+                        <h3>FinBERT Cosine Similarity</h3>
+                        <p>
+                            We compute cosine similarity scores between real answers and generated answers 
+                            using FinBERT embeddings. Scores in the 0.7–0.85 range reflect moderate to strong 
+                            semantic alignment between related but non-paraphrased texts.
+                        </p>
+                    </div>
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            <div class="bar-item">
+                                <span class="bar-label">Spec 1: Random Q&A</span>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="--value: 80.7%">
+                                        <span class="bar-value">0.807</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bar-item">
+                                <span class="bar-label">Spec 2: Recent Q&A</span>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="--value: 78.4%">
+                                        <span class="bar-value">0.784</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bar-item">
+                                <span class="bar-label">Spec 3: Recent + 10-Q</span>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="--value: 77.4%">
+                                        <span class="bar-value">0.774</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bar-item highlight">
+                                <span class="bar-label">Spec 4: Persona + 10-Q</span>
+                                <div class="bar-wrapper">
+                                    <div class="bar best" style="--value: 81.5%">
+                                        <span class="bar-value">0.815</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-insight">
+                        <strong>Key Insight:</strong> Specification 4 achieves the highest similarity, suggesting 
+                        that summarizing behavioral patterns into an explicit persona can match or exceed the 
+                        performance of example-based prompting.
+                    </div>
+                </div>
+
+                <!-- NLI Tab -->
+                <div class="tab-panel" id="nli">
+                    <div class="result-explanation">
+                        <h3>Bidirectional Natural Language Inference</h3>
+                        <p>
+                            We evaluate whether generated responses entail, contradict, or are neutral relative 
+                            to real answers. Low contradiction rates indicate the model avoids misinformation.
+                        </p>
+                    </div>
+                    <div class="nli-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Specification</th>
+                                    <th>Direction</th>
+                                    <th>Entailment</th>
+                                    <th>Neutral</th>
+                                    <th>Contradiction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">Spec 1</td>
+                                    <td>gen → real</td>
+                                    <td>1</td>
+                                    <td>40</td>
+                                    <td class="low">2</td>
+                                </tr>
+                                <tr>
+                                    <td>real → gen</td>
+                                    <td>14</td>
+                                    <td>27</td>
+                                    <td class="low">0</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Spec 2</td>
+                                    <td>gen → real</td>
+                                    <td>1</td>
+                                    <td>40</td>
+                                    <td class="low">2</td>
+                                </tr>
+                                <tr>
+                                    <td>real → gen</td>
+                                    <td>15</td>
+                                    <td>25</td>
+                                    <td class="low">0</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Spec 3</td>
+                                    <td>gen → real</td>
+                                    <td>2</td>
+                                    <td>39</td>
+                                    <td class="low">1</td>
+                                </tr>
+                                <tr>
+                                    <td>real → gen</td>
+                                    <td>17</td>
+                                    <td>24</td>
+                                    <td class="low">0</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td rowspan="2">Spec 4</td>
+                                    <td>gen → real</td>
+                                    <td>1</td>
+                                    <td>38</td>
+                                    <td class="low">1</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td>real → gen</td>
+                                    <td class="high">18</td>
+                                    <td>24</td>
+                                    <td class="low">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="result-insight">
+                        <strong>Key Insight:</strong> Contradictions are rare across all specifications, 
+                        indicating the model generally avoids factual errors. However, neutral labels dominate, 
+                        showing the model often misses specific details.
+                    </div>
+                </div>
+
+                <!-- Tone Tab -->
+                <div class="tab-panel" id="tone">
+                    <div class="result-explanation">
+                        <h3>Loughran-McDonald Tone Analysis</h3>
+                        <p>
+                            We measure tone alignment using a 7-dimensional vector capturing positive, negative, 
+                            uncertainty, litigious, constraining, modal, and neutral tones.
+                        </p>
+                    </div>
+                    <div class="tone-chart">
+                        <div class="tone-item">
+                            <div class="tone-bar-container">
+                                <div class="tone-bar" style="--height: 51.8%"></div>
+                            </div>
+                            <span class="tone-value">0.518</span>
+                            <span class="tone-label">Spec 1</span>
+                        </div>
+                        <div class="tone-item">
+                            <div class="tone-bar-container">
+                                <div class="tone-bar" style="--height: 45.1%"></div>
+                            </div>
+                            <span class="tone-value">0.451</span>
+                            <span class="tone-label">Spec 2</span>
+                        </div>
+                        <div class="tone-item">
+                            <div class="tone-bar-container">
+                                <div class="tone-bar" style="--height: 47.0%"></div>
+                            </div>
+                            <span class="tone-value">0.470</span>
+                            <span class="tone-label">Spec 3</span>
+                        </div>
+                        <div class="tone-item">
+                            <div class="tone-bar-container">
+                                <div class="tone-bar" style="--height: 45.5%"></div>
+                            </div>
+                            <span class="tone-value">0.455</span>
+                            <span class="tone-label">Spec 4</span>
+                        </div>
+                    </div>
+                    <div class="result-insight">
+                        <strong>Key Insight:</strong> Tone alignment (0.45–0.52) is noticeably lower than 
+                        semantic similarity, suggesting the model captures content more effectively than 
+                        Jamie Dimon's distinctive tonal profile.
+                    </div>
+                </div>
+
+                <!-- Human Evaluation Tab -->
+                <div class="tab-panel" id="human">
+                    <div class="result-explanation">
+                        <h3>Qualitative Human Analysis</h3>
+                        <p>
+                            Manual review of generated vs. real responses reveals systematic patterns 
+                            in how the digital twin diverges from Jamie Dimon's actual communication style.
+                        </p>
+                    </div>
+                    <div class="human-findings">
+                        <div class="finding-card">
+                            <div class="finding-icon negative">✗</div>
+                            <h4>Vague & High-Level</h4>
+                            <p>Generated answers often give deflective responses that don't directly answer the question, unlike Dimon's specific replies.</p>
+                        </div>
+                        <div class="finding-card">
+                            <div class="finding-icon negative">✗</div>
+                            <h4>Excessive Politeness</h4>
+                            <p>Model starts with filler phrases like "Thanks for the question" and "Certainly" which Dimon rarely uses.</p>
+                        </div>
+                        <div class="finding-card">
+                            <div class="finding-icon negative">✗</div>
+                            <h4>Sanitized Tone</h4>
+                            <p>Model uses corporate-speak while Dimon is often blunt, saying things like "stupid CECL" or "deep flaws."</p>
+                        </div>
+                        <div class="finding-card">
+                            <div class="finding-icon negative">✗</div>
+                            <h4>Over-Hedging</h4>
+                            <p>Model uses "might," "could," "potentially" frequently, whereas Jamie makes definitive statements.</p>
+                        </div>
+                        <div class="finding-card">
+                            <div class="finding-icon negative">✗</div>
+                            <h4>Missing Numbers</h4>
+                            <p>Model avoids specific numbers and factual details, giving safer, more general explanations.</p>
+                        </div>
+                        <div class="finding-card">
+                            <div class="finding-icon negative">✗</div>
+                            <h4>Verbose Responses</h4>
+                            <p>Generated answers are typically longer and less concise than Dimon's direct, to-the-point replies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="section demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">04 / Interactive</span>
+                <h2>See It In Action</h2>
+            </div>
+            
+            <!-- Interactive Q&A Browser -->
+            <div class="qa-browser">
+                <div class="qa-browser-header">
+                    <h3>Browse All 43 Q&A Comparisons</h3>
+                    <div class="qa-controls">
+                        <div class="qa-selector">
+                            <label for="spec-select">Specification:</label>
+                            <select id="spec-select">
+                                <option value="spec4">Spec 4: Persona + 10-Q (Best)</option>
+                                <option value="spec1">Spec 1: Random 500 Q&A</option>
+                                <option value="spec2">Spec 2: Recent 500 Q&A</option>
+                                <option value="spec3">Spec 3: Recent Q&A + 10-Q</option>
+                            </select>
+                        </div>
+                        <div class="qa-nav">
+                            <button id="prev-qa" class="qa-nav-btn">← Previous</button>
+                            <span id="qa-counter">1 / 43</span>
+                            <button id="next-qa" class="qa-nav-btn">Next →</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="qa-display" class="demo-comparison">
+                    <!-- Content loaded by JavaScript -->
+                </div>
+            </div>
+
+            <div class="demo-container">
+                <!-- Persona Showcase moved here -->
+
+                <div class="persona-showcase">
+                    <h3>Generated Jamie Dimon Persona Profile</h3>
+                    <p class="persona-subtitle">Extracted from 500 most recent Q&A pairs using GPT-4o</p>
+                    <div class="persona-content">
+                        <div class="persona-section">
+                            <h4>Communication Style</h4>
+                            <p>Direct, candid, and often informal. Uses plain language and is unafraid to express opinions strongly, even on complex financial topics. Confident and authoritative, reflecting deep knowledge in banking.</p>
+                        </div>
+                        <div class="persona-section">
+                            <h4>Characteristic Expressions</h4>
+                            <div class="expressions">
+                                <span class="expression">"our capital cup runneth over"</span>
+                                <span class="expression">"gravel in the gut and spit in the eye"</span>
+                                <span class="expression">"silicon valley is coming"</span>
+                                <span class="expression">"we're not going to sit on our hands"</span>
+                                <span class="expression">"prepared for all eventualities"</span>
+                                <span class="expression">"we're going to do whatever it takes"</span>
+                            </div>
+                        </div>
+                        <div class="persona-section">
+                            <h4>Core Values</h4>
+                            <ul>
+                                <li>Long-term growth over short-term gains</li>
+                                <li>Strong client service</li>
+                                <li>Continuous innovation</li>
+                                <li>Risk management & financial stability</li>
+                                <li>Transparency and accountability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Demo Section -->
+    <section id="audio" class="section audio-demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">05 / Audio Synthesis</span>
+                <h2>Listen to the Digital Twin</h2>
+            </div>
+            <p class="section-intro">
+                We generated synthetic audio for all 43 test Q&A pairs across all four specifications. 
+                Listen to how the AI-generated responses sound when converted to speech.
+            </p>
+
+            <div class="audio-grid">
+                <div class="audio-card">
+                    <div class="audio-header">
+                        <span class="audio-spec">Specification 1</span>
+                        <h4>Random 500 Q&A</h4>
+                    </div>
+                    <div class="audio-info">
+                        <span class="audio-count">43 audio files</span>
+                        <span class="audio-quarters">Q1-Q3 2025</span>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q1 2025 - Test 00</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec1_random_500/2025Q1_test00.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q2 2025 - Test 16</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec1_random_500/2025Q2_test16.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="audio-card">
+                    <div class="audio-header">
+                        <span class="audio-spec">Specification 2</span>
+                        <h4>Recent 500 Q&A</h4>
+                    </div>
+                    <div class="audio-info">
+                        <span class="audio-count">43 audio files</span>
+                        <span class="audio-quarters">Q1-Q3 2025</span>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q1 2025 - Test 00</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec2_recent_500/2025Q1_test00.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q3 2025 - Test 35</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec2_recent_500/2025Q3_test35.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="audio-card">
+                    <div class="audio-header">
+                        <span class="audio-spec">Specification 3</span>
+                        <h4>Recent Q&A + 10-Q</h4>
+                    </div>
+                    <div class="audio-info">
+                        <span class="audio-count">43 audio files</span>
+                        <span class="audio-quarters">Q1-Q3 2025</span>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q1 2025 - Test 00</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec3_recent_500_plus_10q/2025Q1_test00.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q2 2025 - Test 20</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec3_recent_500_plus_10q/2025Q2_test20.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="audio-card featured">
+                    <div class="audio-header">
+                        <span class="audio-spec">Specification 4</span>
+                        <h4>Persona + 10-Q</h4>
+                    </div>
+                    <div class="audio-info">
+                        <span class="audio-count">43 audio files</span>
+                        <span class="audio-quarters">Q1-Q3 2025</span>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q1 2025 - Test 00</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec4_persona_plus_10q/2025Q1_test00.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <p class="audio-label">Sample: Q3 2025 - Test 42</p>
+                        <audio controls class="audio-player">
+                            <source src="Results/synthetic audio/spec4_persona_plus_10q/2025Q3_test42.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio-note">
+                <p>💡 <strong>Note:</strong> All 172 audio files (43 per specification × 4 specifications) are available in the 
+                <code>Results/synthetic audio/</code> directory.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="section conclusion">
+        <div class="container">
+            <div class="conclusion-content">
+                <h2>Key Takeaways</h2>
+                <div class="takeaways-grid">
+                    <div class="takeaway">
+                        <div class="takeaway-number">01</div>
+                        <h3>High Semantic Fidelity</h3>
+                        <p>The model excels at capturing the executive's conversational style and general semantic framing, with similarity scores averaging 0.8.</p>
+                    </div>
+                    <div class="takeaway">
+                        <div class="takeaway-number">02</div>
+                        <h3>Limited Detail Reproduction</h3>
+                        <p>Significant limitations in reproducing informational accuracy—the model often misses specific details as indicated by modest NLI entailment rates.</p>
+                    </div>
+                    <div class="takeaway">
+                        <div class="takeaway-number">03</div>
+                        <h3>Tone Gap</h3>
+                        <p>The model struggles to replicate the CEO's subtle tone alignment, particularly his characteristic bluntness and directness.</p>
+                    </div>
+                    <div class="takeaway">
+                        <div class="takeaway-number">04</div>
+                        <h3>Persona Approach Works</h3>
+                        <p>The Persona Summary + 10-Q specification demonstrates an efficient, scalable approach that achieves comparable performance while significantly reducing token load.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">06 / Contributors</span>
+                <h2>Research Team</h2>
+            </div>
+            <p class="team-note">Author names are listed in alphabetical order by surname.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">YC</div>
+                    <h3>Yufei Chen</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">JY</div>
+                    <h3>Jiehang Yu</h3>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">KZ</div>
+                    <h3>Karina Zhang</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">◈</span>
+                    <span>CEO Digital Twin</span>
+                </div>
+                <p class="footer-text">
+                    This study contributes to accounting research on managerial communication 
+                    and to AI research on human-level digital twins.
+                </p>
+                <div class="footer-links">
+                    <a href="https://www.dropbox.com/scl/fo/htkfxh4b4779z5r4aa1f4/ALGOhpKNLWzcNSB9M3zuLW0?rlkey=nkkukhf3zs4gt5gfe3td0ttjn&st=07ofqp4j&dl=0" target="_blank">Full Results Data →</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Research Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
