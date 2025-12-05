@@ -4,7 +4,7 @@ An LLM-based digital twin of Jamie Dimon (CEO of JPMorgan Chase) trained on 17 y
 
 ## 🌐 Interactive Demo Website
 
-- [CEO Digital Twin Demo Website](https://github.com/ashleyyu5801-png/CEO-digital-twin-based-on-earnings-call-website/deployments/github-pages)
+- [CEO Digital Twin Demo Website](https://ashleyyu5801-png.github.io/CEO-digital-twin-based-on-earnings-call-website/)
 
 ## 📊 Project Overview
 
